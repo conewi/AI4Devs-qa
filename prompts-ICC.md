@@ -41,3 +41,22 @@ I've successfully applied the changes to the codebase:
 
 ** Prompt 3 (Cursor claude 3.7 sonnet thinking) (Ask mode)
 It seems that the BaseUrl is missing
+
+
+** Prompt 4 (Cursor claude 3.7 sonnet thinking) (Ask mode)
+There are some failed tests, one of them is :
+AssertionError: Timed out retrying after 4000ms: Expected to find element: `3`, but never found it. Queried from:
+
+              > cy.get(.card-header)
+    at Context.eval (webpack://frontend/./cypress/integration/position.spec.js:35:49)
+    at Context.callback (cypress_runner.js:119851:26)
+    at getRet (cypress_runner.js:119616:20)
+    at tryCatcher (cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (cypress_runner.js:4285:29)
+    at thenFn (cypress_runner.js:119627:66)
+    at yieldItem (cypress_runner.js:119859:16)
+    at tryCatcher (cypress_runner.js:1777:23)
+    at Object.gotValue (cypress_runner.js:6446:18) 
+
+** Prompt 5 (Cursor claude 3.7 sonnet thinking) (Ask mode)
+Iteration over each test to solve minor issues.
